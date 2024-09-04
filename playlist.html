@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playlist for {{ genre }}</title>
+</head>
+<body>
+    <h1>Generated Playlist for {{ genre }}</h1>
+    <ul>
+        {% for song in playlist %}
+        <li>{{ song['title'] }} - {{ song['artist'] }} ({{ song['genre'] }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Genre Selection</a>
+</body>
+</html>
